@@ -1,5 +1,5 @@
 import zeroconf, zeroconf._utils.ipaddress, zeroconf._handlers.answers # required by pyinstaller!
-import os, json, subprocess, pychromecast
+import os, time, json, subprocess, pychromecast
 
 # Config file exists?
 config_file = "Chromecast.json"
@@ -39,4 +39,6 @@ else:
     print("VLC exe not found")
 
 # Everything OK
+print("Bye!")
+time.sleep(3)
 exit(0)
